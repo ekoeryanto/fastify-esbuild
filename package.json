@@ -12,7 +12,8 @@
     "build": "bob-ts --paths -i src",
     "dev": "bob-ts-watch --paths -i src -c \"fastify start -l info -P dist/app.js\"",
     "test": "bob-ts --paths -i src -i test && tap \"./dist/**/*.test.js\"",
-    "test:watch": "bob-ts-watch -c \"tap ./dist/**/*.test.js\""
+    "test:watch": "bob-ts-watch -c \"tap ./dist/**/*.test.js\"",
+    "lint": "eslint . --fix --ignore-path .gitignore "
   },
   "tap": {
     "node-arg": [

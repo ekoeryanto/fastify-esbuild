@@ -3,7 +3,6 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as tap from 'tap';
 // @ts-expect-error
-// eslint-disable-next-line import/extensions
 import * as helper from 'fastify-cli/helper.js';
 
 export type Test = typeof tap['Test']['prototype'];
