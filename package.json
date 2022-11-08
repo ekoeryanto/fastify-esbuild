@@ -1,0 +1,46 @@
+{
+  "name": "fx",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.ts",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "fastify start -l info dist/app.js",
+    "build": "bob-ts --paths -i src",
+    "dev": "bob-ts-watch --paths -i src -c \"fastify start -l info -P dist/app.js\"",
+    "test": "bob-ts --paths -i src -i test && tap \"./dist/**/*.test.js\"",
+    "test:watch": "bob-ts-watch -c \"tap ./dist/**/*.test.js\""
+  },
+  "tap": {
+    "node-arg": [
+      "--no-warnings",
+      "--experimental-loader",
+      "@istanbuljs/esm-loader-hook"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.4.1",
+    "@fastify/sensible": "^5.1.1",
+    "fastify": "^4.9.2",
+    "fastify-cli": "^5.5.1",
+    "fastify-plugin": "^4.3.0"
+  },
+  "devDependencies": {
+    "@istanbuljs/esm-loader-hook": "^0.2.0",
+    "@types/node": "^18.11.9",
+    "@types/tap": "^15.0.7",
+    "bob-ts": "^4.1.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "fastify-tsconfig": "^1.0.1",
+    "pino-pretty": "^9.1.1",
+    "tap": "^16.3.0",
+    "typescript": "^4.8.4"
+  }
+}

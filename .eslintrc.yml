@@ -1,0 +1,23 @@
+env:
+  node: true
+
+extends:
+  - airbnb-base
+  - airbnb-typescript/base
+
+parserOptions:
+  project:
+    - ./tsconfig.json
+    - ./test/tsconfig.json
+
+rules:
+  quotes:
+    - error
+    - single
+
+overrides:
+  - files:
+      - "*.spec.ts"
+      - "*.test.ts"
+    rules:
+      '@typescript-eslint/no-shadow': off
