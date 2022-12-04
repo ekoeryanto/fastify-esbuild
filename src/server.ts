@@ -4,7 +4,7 @@ import dotenvLoad from 'dotenv-load';
 import Fastify, { FastifyListenOptions } from 'fastify';
 // Require library to exit fastify process, gracefully (if possible)
 import closeWithGrace, { CloseWithGraceAsyncCallback } from 'close-with-grace';
-import app from './app';
+import { app } from './app';
 
 dotenvLoad();
 

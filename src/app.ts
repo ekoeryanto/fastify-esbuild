@@ -15,7 +15,7 @@ export const options: AppOptions = {
   forceESM: true,
 };
 
-const app: FastifyPluginAsync<AppOptions> = async (
+export const app: FastifyPluginAsync<AppOptions> = async (
   fastify,
   opts,
 ): Promise<void> => {
@@ -40,4 +40,3 @@ const app: FastifyPluginAsync<AppOptions> = async (
 };
 
 export default app;
-// export { app, options };
