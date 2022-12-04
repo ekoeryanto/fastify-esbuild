@@ -11,7 +11,7 @@ export type AppOptions = {
 } & Partial<AutoloadPluginOptions>;
 
 // Pass --options via CLI arguments in command to enable these options.
-const options: AppOptions = {
+export const options: AppOptions = {
   forceESM: true,
 };
 
@@ -40,4 +40,4 @@ const app: FastifyPluginAsync<AppOptions> = async (
 };
 
 export default app;
-export { app, options };
+// export { app, options };
