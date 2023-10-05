@@ -27,7 +27,7 @@
   "license": "ISC",
   "dependencies": {
     "@fastify/autoload": "^5.7.1",
-    "@fastify/sensible": "^5.2.0",
+    "@fastify/sensible": "^5.3.0",
     "close-with-grace": "^1.2.0",
     "dotenv": "^16.3.1",
     "dotenv-load": "^2.0.1",
@@ -37,19 +37,19 @@
   },
   "devDependencies": {
     "@istanbuljs/esm-loader-hook": "^0.2.0",
-    "@types/node": "^18.17.15",
+    "@types/node": "^18.18.3",
     "@types/tap": "^15.0.9",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
     "bob-ts": "^4.1.1",
-    "esbuild": "^0.16.17",
-    "eslint": "^8.49.0",
+    "esbuild": "^0.19.4",
+    "eslint": "^8.50.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
-    "fastify-tsconfig": "^1.0.1",
-    "pino-pretty": "^10.2.0",
-    "tap": "^16.3.8",
+    "fastify-tsconfig": "^2.0.0",
+    "pino-pretty": "^10.2.3",
+    "tap": "^18.4.2",
     "typescript": "^5.2.2"
   }
 }
